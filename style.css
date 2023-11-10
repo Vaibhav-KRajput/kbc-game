@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:darkslategray;
+    padding: 12px 0px;
+}
+
+.logo {
+    color:white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 3px 67px;
+    font-family: 'Signika Negative', sans-serif;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li a {
+    text-decoration: none;
+    color:white;
+    padding: 0px 34px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+nav li a:hover {
+    color: white;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.container{
+    /* box-shadow: 0 0 10px rgba(52, 41, 137, 0.2); */
+    max-width:600px;
+    margin:56px  auto;
+    padding: 24px 20px;
+}
+
+#question{
+    padding: 8px 0px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.4rem;
+}
+
+#displayquestion{
+    color:teal;
+    margin: 12px 0px;
+    font-weight: bold;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.2rem;
+}
+
+h2 {
+    padding: 12px;
+    color:brown;
+    font-family: 'Signika Negative', sans-serif;
+    font-size:1.7rem;
+}
+
+#option{
+    margin:14px -20px;
+}
+
+#correct,#wrong{
+    font-family: 'Signika Negative', sans-serif;
+     color:purple;
+     font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2px 0px;
+}
+
+#option button{
+    margin:2px 12px;
+    padding: 4px 12px;
+    background-color:silver;
+    border: 2px solid silver;
+    border-radius: 9px;
+    font-size:1.0rem;
+    font-weight: bold;
+    color:black;
+    cursor: pointer;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+#game,#prize{
+    font-size: 1.2rem;
+    color: purple;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+
+#nextbutton{
+    margin:18px -5px;
+    padding: 4px 12px;
+    background-color: dimgray;
+    border: 2px solid  rgb(63, 105, 141);
+    border-radius: 9px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nextbutton:hover{
+    background-color: black;
+}
+
+
+@media screen and (max-width: 598px) {
+
+    .menu-icon {
+        display: flex;
+    }
+
+    ul.nav-links {
+        display: none;
+        flex-direction:row;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        /* padding: 5px 2px; */
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav li a {
+       padding:2px 31px;
+    }
+
+    nav li a:hover{
+        font-size:12px;
+    }
+
+    ul.nav-links.active {
+        display: flex;
+    }
+
+    ul.nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        padding:0px 34px;
+        max-width:70vw;
+        margin: 34px 0px;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    #question,#displayquestion,#option,#correct,#wrong,#game,#prize{
+        font-size: 1.2rem;
+    }
+
+    #option button {
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nextbutton{
+        font-size: 0.9rem;
+        margin: 7px 0px;
+    }
+}
